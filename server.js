@@ -6,12 +6,12 @@ var fs = require('fs'),
     TwitterBot = require('node-twitterbot').TwitterBot,
     config = require(path.join(__dirname, 'config.js'));
 
-var T = new TwitterBot({
+/*var T = new TwitterBot({
  consumer_key: process.env.BOT_CONSUMER_KEY,
  consumer_secret: process.env.BOT_CONSUMER_SECRET,
  access_token: process.env.BOT_ACCESS_TOKEN,
  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
-});
+});*/
 
 var T = new Twit(config);
 
