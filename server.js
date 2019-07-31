@@ -209,11 +209,7 @@ fs.readdir(__dirname + '/images', function(err, files) {
     files.forEach(function(f) {
       images.push(f);
     });
-
-    setInterval(function(){
-      upload_random_image(images);
-    }, 10000);
-
+    upload_random_image(images);
   }
 });
 
